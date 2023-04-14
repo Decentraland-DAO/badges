@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Badge 4",
+    "cid": "bafyreicw3nvodlzlzzudf6653gzvcrulvrqvfmu3vnwvayl7fxoa3rviai",
+    "metadataUrl": "https://ipfs.io/ipfs/bafyreicw3nvodlzlzzudf6653gzvcrulvrqvfmu3vnwvayl7fxoa3rviai/metadata.json",
+    "ipfsAddress": "ipfs://bafyreicw3nvodlzlzzudf6653gzvcrulvrqvfmu3vnwvayl7fxoa3rviai",
+    "description": "Description 4",
+    "imageName": "Badge4.png"
+  },
+  {
+    "name": "Badge 5",
+    "cid": "bafyreicojasgf7mqvclql3saq7hg7qtys6o227pyedpvmcjcow5obpuxqi",
+    "metadataUrl": "https://ipfs.io/ipfs/bafyreicojasgf7mqvclql3saq7hg7qtys6o227pyedpvmcjcow5obpuxqi/metadata.json",
+    "ipfsAddress": "ipfs://bafyreicojasgf7mqvclql3saq7hg7qtys6o227pyedpvmcjcow5obpuxqi",
+    "description": "Description 5",
+    "imageName": "Badge1.jpg"
+  }
+]

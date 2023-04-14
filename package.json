@@ -1,0 +1,47 @@
+{
+  "name": "badges",
+  "type": "commonjs",
+  "version": "1.0.0",
+  "description": "Scripts and tools for minting and airdropping DAO badges",
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=7.0.0"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "watchman": false,
+    "setupFiles": [
+      "dotenv/config.js"
+    ],
+    "roots": [
+      "<rootDir>/src/"
+    ],
+    "moduleNameMapper": {
+      "\\.(css|less|sass|scss|gif|ttf|eot|svg)$": "<rootDir>/src/__mocks__/files.ts"
+    }
+  },
+  "author": "DAO Gov Squad",
+  "license": "ISC",
+  "dependencies": {
+    "@nomiclabs/hardhat-waffle": "^2.0.5",
+    "@otterspace-xyz/contracts": "^2.6.6",
+    "dotenv": "^16.0.3",
+    "hardhat": "^2.13.1",
+    "nft.storage": "^7.0.3"
+  },
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^3.2.0",
+    "eslint": "^8.15.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "lint-staged": "^12.4.2",
+    "prettier": "2.6.2"
+  },
+  "lint-staged": {
+    "*.{js}": "eslint --cache --fix",
+    "*.{js,json}": "prettier --write"
+  }
+}
