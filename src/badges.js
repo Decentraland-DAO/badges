@@ -2,15 +2,17 @@ const dotenv = require('dotenv')
 const fs = require('fs')
 const path = require('path')
 const { File, NFTStorage } = require('nft.storage')
-// const { Contract } = require("ethers");
-const { abi: BadgesAbi } = require("@otterspace-xyz/contracts/out/Badges.sol/Badges.json");
+const { abi: BadgesAbi } = require('@otterspace-xyz/contracts/out/Badges.sol/Badges.json')
+const { getOtterspaceConfig } = require('./otterspaceConfig')
 
 dotenv.config()
 const API_KEY = process.env.NFT_STORAGE_API_KEY
 const RAFT_ID = Number(process.env.RAFT_ID)
-const RAFT_CONTRACT_ADDRESS = process.env.RAFT_CONTRACT_ADDRESS
-const BADGES_CONTRACT_ADDRESS = process.env.BADGES_CONTRACT_ADDRESS
 const SPEC_OWNER_ADDRESS = process.env.SIGNER_ADDRESS
+const OTTERSPACE_CONFIG = getOtterspaceConfig(process.env.NETWORK_ID)
+const RAFT_CONTRACT_ADDRESS = OTTERSPACE_CONFIG.raftContractAddress
+const BADGES_CONTRACT_ADDRESS = OTTERSPACE_CONFIG.badgesContractAddress
+const MANUAL_GAS_LIMIT = 1000000
 const LOG_FILE_NAME = 'uploadedBadges.json'
 
 async function storeBadgeSpec(name, description, imageName, expiresAt = undefined) {
@@ -54,6 +56,8 @@ async function storeBadgeSpec(name, description, imageName, expiresAt = undefine
   console.log(`Uploaded: `, JSON.stringify(badgeData))
 
   saveJsonToFile(LOG_FILE_NAME, badgeData)
+
+  return cid
 }
 
 function saveJsonToFile(logFileName, json) {
@@ -70,26 +74,43 @@ function saveJsonToFile(logFileName, json) {
   fs.writeFileSync(logFilePath, JSON.stringify(logData))
 }
 
-async function mintBadge(hre, specUri){
-  const [owner] = await hre.ethers.getSigners();
+async function mintBadge(hre, badgeCid) {
+  const [owner] = await hre.ethers.getSigners()
   const contract = new hre.ethers.Contract(BADGES_CONTRACT_ADDRESS, BadgesAbi, owner)
-  const txn = await contract.connect(owner).createSpec(specUri, RAFT_ID)
+  const txn = await contract.connect(owner).createSpec(badgeCid, RAFT_ID)
   await txn.wait()
   console.log('Minted badge with txn hash:', txn.hash)
 }
 
-const airdropBadge = async (hre, badgeCid, recipient) => {
-  const [owner] = await hre.ethers.getSigners();
+const airdrop = async (hre, badgeCid, recipients) => {
+  const [owner] = await hre.ethers.getSigners()
   const contract = new hre.ethers.Contract(BADGES_CONTRACT_ADDRESS, BadgesAbi, owner)
-  const txn = await contract.connect(owner).airdrop([recipient], badgeCid)
+  const recipientsArray = recipients.split(',')
+  const txn = await contract.connect(owner).airdrop(recipientsArray, badgeCid)
   await txn.wait()
   console.log('Airdropped badge with txn hash:', txn.hash)
+}
+
+const revoke = async (hre, badgeId, reason = 2) => {
+  const [owner] = await hre.ethers.getSigners()
+  const contract = new hre.ethers.Contract(BADGES_CONTRACT_ADDRESS, BadgesAbi, owner)
+  const txn = await contract.connect(owner).revokeBadge(RAFT_ID, badgeId, reason, { gasLimit: MANUAL_GAS_LIMIT })
+  await txn.wait()
+  console.log('Revoked badge with txn hash:', txn.hash)
+}
+
+const unequip = async (hre, badgeId) => {
+  const [owner] = await hre.ethers.getSigners()
+  const contract = new hre.ethers.Contract(BADGES_CONTRACT_ADDRESS, BadgesAbi, owner)
+  const txn = await contract.connect(owner).unequip(badgeId)
+  await txn.wait()
+  console.log('Revoked badge with txn hash:', txn.hash)
 }
 
 module.exports = {
   storeBadgeSpec,
   mintBadge,
-  airdropBadge
+  airdrop,
+  revoke,
+  unequip,
 }
-
-

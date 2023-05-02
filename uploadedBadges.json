@@ -14,5 +14,45 @@
     "ipfsAddress": "ipfs://bafyreicojasgf7mqvclql3saq7hg7qtys6o227pyedpvmcjcow5obpuxqi",
     "description": "Description 5",
     "imageName": "Badge1.jpg"
+  },
+  {
+    "name": "Governance Squad",
+    "cid": "bafyreiacus3oj2dbzako6cebgab3amke3invpgaan337y2uubc4ylopon4",
+    "metadataUrl": "https://ipfs.io/ipfs/bafyreiacus3oj2dbzako6cebgab3amke3invpgaan337y2uubc4ylopon4/metadata.json",
+    "ipfsAddress": "ipfs://bafyreiacus3oj2dbzako6cebgab3amke3invpgaan337y2uubc4ylopon4",
+    "description": "MANA Voting Power comes from holding\\nDecentraland’s own token, MANA, on the wallet used to create this account.",
+    "imageName": "Governance Squad Badge.png"
+  },
+  {
+    "name": "Governance Squad",
+    "cid": "bafyreidhyrqbltxmeiibbvmf4pwrjx46zct56fur42pxbee6z6tvvtcsaq",
+    "metadataUrl": "https://ipfs.io/ipfs/bafyreidhyrqbltxmeiibbvmf4pwrjx46zct56fur42pxbee6z6tvvtcsaq/metadata.json",
+    "ipfsAddress": "ipfs://bafyreidhyrqbltxmeiibbvmf4pwrjx46zct56fur42pxbee6z6tvvtcsaq",
+    "description": "MANA Voting Power comes from holdin Decentraland’s own token, MANA, on the wallet used to create this account.",
+    "imageName": "Governance Squad Badge.png"
+  },
+  {
+    "name": "Governance Squad",
+    "cid": "bafyreiabhpvdriirgnwcdmht4bnx3kajby6hax75w5zho46v2vmfcojlou",
+    "metadataUrl": "https://ipfs.io/ipfs/bafyreiabhpvdriirgnwcdmht4bnx3kajby6hax75w5zho46v2vmfcojlou/metadata.json",
+    "ipfsAddress": "ipfs://bafyreiabhpvdriirgnwcdmht4bnx3kajby6hax75w5zho46v2vmfcojlou",
+    "description": "**MANA Voting Power** comes from holding Decentraland’s own token, MANA, on the wallet used to create this account.",
+    "imageName": "Governance Squad Badge.png"
+  },
+  {
+    "name": "Grantee",
+    "cid": "bafyreihxt5zbnrbkpmkuq6dlk2dlyuopqev4ifvzjsy74gxn5af2q365e4",
+    "metadataUrl": "https://ipfs.io/ipfs/bafyreihxt5zbnrbkpmkuq6dlk2dlyuopqev4ifvzjsy74gxn5af2q365e4/metadata.json",
+    "ipfsAddress": "ipfs://bafyreihxt5zbnrbkpmkuq6dlk2dlyuopqev4ifvzjsy74gxn5af2q365e4",
+    "description": "Some awesome grant",
+    "imageName": "Grantee Badge.png"
+  },
+  {
+    "name": "Governance Squad",
+    "cid": "bafyreianjkb3il7wulczm55dredodrizufxvithfisjkf5e4yqusb4f2mq",
+    "metadataUrl": "https://ipfs.io/ipfs/bafyreianjkb3il7wulczm55dredodrizufxvithfisjkf5e4yqusb4f2mq/metadata.json",
+    "ipfsAddress": "ipfs://bafyreianjkb3il7wulczm55dredodrizufxvithfisjkf5e4yqusb4f2mq",
+    "description": "Member of the Governance Squad",
+    "imageName": "GovernanceSquad-2023-1.0.png"
   }
 ]
