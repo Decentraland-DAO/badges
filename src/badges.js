@@ -14,6 +14,7 @@ const RAFT_CONTRACT_ADDRESS = OTTERSPACE_CONFIG.raftContractAddress
 const BADGES_CONTRACT_ADDRESS = OTTERSPACE_CONFIG.badgesContractAddress
 const MANUAL_GAS_LIMIT = 1000000
 const LOG_FILE_NAME = 'uploadedBadges.json'
+const TENURE_ENDED = 2;
 
 async function storeBadgeSpec(name, description, imageName, expiresAt = undefined) {
   const client = new NFTStorage({ token: API_KEY })
@@ -91,7 +92,7 @@ const airdrop = async (hre, badgeCid, recipients) => {
   console.log('Airdropped badge with txn hash:', txn.hash)
 }
 
-const revoke = async (hre, badgeId, reason = 2) => {
+const revoke = async (hre, badgeId, reason = TENURE_ENDED) => {
   const [owner] = await hre.ethers.getSigners()
   const contract = new hre.ethers.Contract(BADGES_CONTRACT_ADDRESS, BadgesAbi, owner)
   const txn = await contract.connect(owner).revokeBadge(RAFT_ID, badgeId, reason, { gasLimit: MANUAL_GAS_LIMIT })

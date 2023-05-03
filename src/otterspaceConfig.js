@@ -30,8 +30,8 @@ const OTTERSPACE_CONFIG = {
   }
 }
 
-const getOtterspaceConfig = (chainId = 0) => {
-  if (chainId === 5 || chainId === 10 || chainId === 1 || chainId === 137) {
+const getOtterspaceConfig = (chainId = DEFAULT_NETWORK) => {
+  if (chainId === 5 || chainId === DEFAULT_NETWORK || chainId === 1 || chainId === 137) {
     return OTTERSPACE_CONFIG[chainId]
   }
   return OTTERSPACE_CONFIG[DEFAULT_NETWORK]
