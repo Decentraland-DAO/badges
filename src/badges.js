@@ -14,7 +14,7 @@ const RAFT_CONTRACT_ADDRESS = OTTERSPACE_CONFIG.raftContractAddress
 const BADGES_CONTRACT_ADDRESS = OTTERSPACE_CONFIG.badgesContractAddress
 const MANUAL_GAS_LIMIT = 1000000
 const LOG_FILE_NAME = 'uploadedBadges.json'
-const TENURE_ENDED = 2;
+const REASON_TENURE_ENDED = 2;
 
 async function storeBadgeSpec(name, description, imageName, expiresAt = undefined) {
   const client = new NFTStorage({ token: API_KEY })
@@ -44,7 +44,7 @@ async function storeBadgeSpec(name, description, imageName, expiresAt = undefine
   const cid = metadata.ipnft
 
   const metadataUrl = `https://ipfs.io/ipfs/${cid}/metadata.json`
-  const ipfsAddress = `ipfs://${cid}`
+  const ipfsAddress = `ipfs://${cid}/metadata.json`
   const badgeData = {
     name: name,
     cid: cid,
@@ -78,7 +78,8 @@ function saveJsonToFile(logFileName, json) {
 async function mintBadge(hre, badgeCid) {
   const [owner] = await hre.ethers.getSigners()
   const contract = new hre.ethers.Contract(BADGES_CONTRACT_ADDRESS, BadgesAbi, owner)
-  const txn = await contract.connect(owner).createSpec(badgeCid, RAFT_ID)
+  const ipfsAddress = `ipfs://${badgeCid}/metadata.json`
+  const txn = await contract.connect(owner).createSpec(ipfsAddress, RAFT_ID)
   await txn.wait()
   console.log('Minted badge with txn hash:', txn.hash)
 }
@@ -87,12 +88,13 @@ const airdrop = async (hre, badgeCid, recipients) => {
   const [owner] = await hre.ethers.getSigners()
   const contract = new hre.ethers.Contract(BADGES_CONTRACT_ADDRESS, BadgesAbi, owner)
   const recipientsArray = recipients.split(',')
-  const txn = await contract.connect(owner).airdrop(recipientsArray, badgeCid)
+  const ipfsAddress = `ipfs://${badgeCid}/metadata.json`
+  const txn = await contract.connect(owner).airdrop(recipientsArray, ipfsAddress)
   await txn.wait()
   console.log('Airdropped badge with txn hash:', txn.hash)
 }
 
-const revoke = async (hre, badgeId, reason = TENURE_ENDED) => {
+const revoke = async (hre, badgeId, reason = REASON_TENURE_ENDED) => {
   const [owner] = await hre.ethers.getSigners()
   const contract = new hre.ethers.Contract(BADGES_CONTRACT_ADDRESS, BadgesAbi, owner)
   const txn = await contract.connect(owner).revokeBadge(RAFT_ID, badgeId, reason, { gasLimit: MANUAL_GAS_LIMIT })
