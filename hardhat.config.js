@@ -24,9 +24,9 @@ module.exports = {
     }
   },
   tasks: {
-    createBadge: {
-      description: 'Uploads a badge spec to IPFS and mints the badge',
-      action: require('./tasks/createBadge')
+    badges: {
+      description: 'Create, mint, airdrop, revoke, and burn badges.',
+      action: require('./tasks/badges')
     }
   }
 }
