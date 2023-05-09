@@ -20,24 +20,35 @@ Create an .env file from .env.example
 - Get your API KEY
 - Add it to `.env` as `NFT_STORAGE_API_KEY`
 
-### Configure Optimism Alchemy RPC
+### Configure Alchemy RPC
 - Create a user in [Alchemy](https://www.alchemy.com/)
-- Create an Optimism app
-- Get your RPC HTTP URL and add it to `.env` as `OPTIMISM_RPC_URL` 
+- Create an Optimism / Polygon app
+- Get your RPC HTTP URL and add it to `.env` as `OPTIMISM_RPC_URL` / `POLYGON_RPC_URL`
 
-It should look like `https://opt-mainnet.g.alchemy.com/v2/your-api-key`.
+It should look like `https://opt-mainnet.g.alchemy.com/v2/your-api-key` or `https://polygon-mainnet.g.alchemy.com/v2/your-api-key`.
 
 Notice that this url might change, so make sure to look into alchemy and get the right HTTP url for your RPC
 
 ### Get a Raft
 
-You will need to have an [Otterspace Raft](https://www.otterspace.xyz/), and fill in the `.env` variables 
-`RAFT_CONTRACT_ADDRESS` and `RAFT_ID`
+You will need to have an [Otterspace Raft](https://www.otterspace.xyz/), and fill in the `.env` variables
+`OPTIMISM_RAFT_ID`, `POLYGON_TEST_RAFT_ID` or `POLYGON_PROD_RAFT_ID`
 
 ### Configure the Signer
 
 You will need a signer address to send the transactions, that should also be the raft owner.  
-Fill in the `.env` variables `SIGNER_ADDRESS` and `SIGNER_PRIVATE_KEY`
+Fill in the following `.env` variables 
+
+For Optimism and Polygon test raft
+```
+TESTING_ADDRESS
+TESTING_PK
+```
+For Polygon prod raft 
+```
+PRD_ADDRESS
+PRD_PK
+```
 
 # Run
 
@@ -46,9 +57,10 @@ Fill in the `.env` variables `SIGNER_ADDRESS` and `SIGNER_PRIVATE_KEY`
 Use the following command to upload a badge spec to IPFS and mint it
 
 ```shell
- npx hardhat --network optimism createBadge --name "Badge Name" --description "Badge Description" --image "Badge.png"
+ npx hardhat --network [networkConfig] createBadge --name "Badge Name" --description "Badge Description" --image "Badge.png"
 ```
 
+- networkConfig can be `optimism`, `polytest` or `polygon`
 Make sure you have the proper contract address in your `.env` file.
 Badge uploaded to IPFS are added to the `uploadedBadges.json` file
 
@@ -83,7 +95,7 @@ Default is 2
 ### Burn
 
 Only the badge owner (the user) can burn the badge.  
-If you are using this you should probably update `SIGNER_ADDRESS` and `SIGNER_PRIVATE_KEY` to the desired user's. 
+If you are using this you should probably update `TESTING_PK` or `PRD_PK` to the desired user's. 
 
 ```shell
  npx hardhat --network optimism burn --badgeid someId
