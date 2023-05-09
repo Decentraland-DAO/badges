@@ -2,13 +2,28 @@ const dotenv = require('dotenv')
 const { storeBadgeSpec, mintBadge, airdrop, revoke, unequip } = require('../src/badges')
 dotenv.config()
 
+function getRaftId(hre) {
+  const networkConfig = hre.network.config
+  return Number(networkConfig.raft_id)
+}
+
 task('createBadge', 'Uploads a badge spec to IPFS and mints the badge')
   .addParam('name', 'Badge name')
   .addParam('description', 'Badge description')
   .addParam('image', 'Badge image')
   .setAction(async (taskArgs, hre) => {
     const { name, description, image } = taskArgs
-    const badgeCid = await storeBadgeSpec(name, description, image)
+    const raftId = getRaftId(hre)
+    const [owner] = await hre.ethers.getSigners()
+    const badgeCid = await storeBadgeSpec(
+      hre.network.name,
+      raftId,
+      owner.address,
+      hre.network.config.raftsContractAddress,
+      name,
+      description,
+      image
+    )
     await mintBadge(hre, badgeCid)
   })
 
