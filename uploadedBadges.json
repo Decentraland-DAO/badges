@@ -1,92 +1,92 @@
 [
   {
     "name": "Security Advisory Board",
-    "cid": "bafyreihe4oevx2jfbavbe4ney2sxbnq7bjols3dl6wjvpevgblpbw4kcb4",
-    "metadataUrl": "https://ipfs.io/ipfs/bafyreihe4oevx2jfbavbe4ney2sxbnq7bjols3dl6wjvpevgblpbw4kcb4/metadata.json",
-    "ipfsAddress": "ipfs://bafyreihe4oevx2jfbavbe4ney2sxbnq7bjols3dl6wjvpevgblpbw4kcb4/metadata.json",
-    "description": "This wallet belongs to a current Decentraland DAO Security Advisory Board (SAB) member. This committee is responsible for overseeing sensible operations of the DAO, and are the only ones with the power to halt operations initiated by the DAO Committee or community members.",
+    "cid": "bafyreibebjlhfylmalijwbto4q5vbjjdej7623zpamxfp62q345ipaxgoi",
+    "metadataUrl": "https://ipfs.io/ipfs/bafyreibebjlhfylmalijwbto4q5vbjjdej7623zpamxfp62q345ipaxgoi/metadata.json",
+    "ipfsAddress": "ipfs://bafyreibebjlhfylmalijwbto4q5vbjjdej7623zpamxfp62q345ipaxgoi/metadata.json",
+    "description": "This account belongs to a current Decentraland DAO Security Advisory Board (SAB) member. This committee is responsible for overseeing sensible operations of the DAO, and are the only ones with the power to halt operations initiated by the DAO Committee or community members.",
     "imageName": "SAB-2023.png",
-    "network": "polytest",
-    "raftId": "6"
+    "network": "polygon",
+    "raftId": 5
+  },
+  {
+    "name": "Security Advisory Board",
+    "cid": "bafyreidvmqur7xi5sxyu4reah3q2fwx5nh3vszxsagoqpjgin4izjkqm44",
+    "metadataUrl": "https://ipfs.io/ipfs/bafyreidvmqur7xi5sxyu4reah3q2fwx5nh3vszxsagoqpjgin4izjkqm44/metadata.json",
+    "ipfsAddress": "ipfs://bafyreidvmqur7xi5sxyu4reah3q2fwx5nh3vszxsagoqpjgin4izjkqm44/metadata.json",
+    "description": "This account belongs to a current Decentraland DAO Security Advisory Board (SAB) member. This board is responsible for overseeing sensible operations of the DAO, and are the only ones with the power to halt operations initiated by the DAO Committee or community members.",
+    "imageName": "SAB-2023.png",
+    "network": "polygon",
+    "raftId": 5
   },
   {
     "name": "DAO Committee",
-    "cid": "bafyreiffwro4akwdfhr3os5n763q2hqjj3vr6vmxfxma47zebf7rihyvmm",
-    "metadataUrl": "https://ipfs.io/ipfs/bafyreiffwro4akwdfhr3os5n763q2hqjj3vr6vmxfxma47zebf7rihyvmm/metadata.json",
-    "ipfsAddress": "ipfs://bafyreiffwro4akwdfhr3os5n763q2hqjj3vr6vmxfxma47zebf7rihyvmm/metadata.json",
-    "description": "This wallet belongs to a current Decentraland DAO Committee member. This committee is responsible for executing relevant DAO on-chain transactions.",
+    "cid": "bafyreia2x3a2kvcocnrogbckuz544jyo2dqiusvlac7ur5phyrum4pqxgu",
+    "metadataUrl": "https://ipfs.io/ipfs/bafyreia2x3a2kvcocnrogbckuz544jyo2dqiusvlac7ur5phyrum4pqxgu/metadata.json",
+    "ipfsAddress": "ipfs://bafyreia2x3a2kvcocnrogbckuz544jyo2dqiusvlac7ur5phyrum4pqxgu/metadata.json",
+    "description": "This account belongs to a current Decentraland DAO Committee member. This committee is responsible for executing relevant on-chain DAO transactions.",
     "imageName": "DC-2023.png",
-    "network": "polytest",
-    "raftId": 6
+    "network": "polygon",
+    "raftId": 5
   },
   {
-    "name": "Wearables Curations Committee",
-    "cid": "bafyreigggepja2y6mtfzrxhwrvx2mk662nl5kb4rjx2xgnn2xyr5fg2w7m",
-    "metadataUrl": "https://ipfs.io/ipfs/bafyreigggepja2y6mtfzrxhwrvx2mk662nl5kb4rjx2xgnn2xyr5fg2w7m/metadata.json",
-    "ipfsAddress": "ipfs://bafyreigggepja2y6mtfzrxhwrvx2mk662nl5kb4rjx2xgnn2xyr5fg2w7m/metadata.json",
-    "description": "This wallet belongs to a current Decentraland DAO Wearables Curation Committee member. This committee is responsible for curating in-world wearable items.",
+    "name": "Wearables Curation Committee",
+    "cid": "bafyreib2avzzxwxvb4onqt3oj6s5yg2peko227dh7mebxmp3674r64z6gu",
+    "metadataUrl": "https://ipfs.io/ipfs/bafyreib2avzzxwxvb4onqt3oj6s5yg2peko227dh7mebxmp3674r64z6gu/metadata.json",
+    "ipfsAddress": "ipfs://bafyreib2avzzxwxvb4onqt3oj6s5yg2peko227dh7mebxmp3674r64z6gu/metadata.json",
+    "description": "This account belongs to a current Decentraland DAO Wearables Curation Committee member. This committee is responsible for curating in-world wearable items.",
     "imageName": "WCC-2023.png",
-    "network": "polytest",
-    "raftId": 6
+    "network": "polygon",
+    "raftId": 5
   },
   {
-    "name": "Wearables Curations Committee",
-    "cid": "bafyreigggepja2y6mtfzrxhwrvx2mk662nl5kb4rjx2xgnn2xyr5fg2w7m",
-    "metadataUrl": "https://ipfs.io/ipfs/bafyreigggepja2y6mtfzrxhwrvx2mk662nl5kb4rjx2xgnn2xyr5fg2w7m/metadata.json",
-    "ipfsAddress": "ipfs://bafyreigggepja2y6mtfzrxhwrvx2mk662nl5kb4rjx2xgnn2xyr5fg2w7m/metadata.json",
-    "description": "This wallet belongs to a current Decentraland DAO Wearables Curation Committee member. This committee is responsible for curating in-world wearable items.",
+    "name": "Wearables Curation Committee",
+    "cid": "bafyreib2avzzxwxvb4onqt3oj6s5yg2peko227dh7mebxmp3674r64z6gu",
+    "metadataUrl": "https://ipfs.io/ipfs/bafyreib2avzzxwxvb4onqt3oj6s5yg2peko227dh7mebxmp3674r64z6gu/metadata.json",
+    "ipfsAddress": "ipfs://bafyreib2avzzxwxvb4onqt3oj6s5yg2peko227dh7mebxmp3674r64z6gu/metadata.json",
+    "description": "This account belongs to a current Decentraland DAO Wearables Curation Committee member. This committee is responsible for curating in-world wearable items.",
     "imageName": "WCC-2023.png",
-    "network": "polytest",
-    "raftId": 6
+    "network": "polygon",
+    "raftId": 5
   },
   {
     "name": "Revocations Committee",
-    "cid": "bafyreidgtyvqe2thlsx3eq5iy7yydx7d5pet2s55rngeux2ecdohdv775a",
-    "metadataUrl": "https://ipfs.io/ipfs/bafyreidgtyvqe2thlsx3eq5iy7yydx7d5pet2s55rngeux2ecdohdv775a/metadata.json",
-    "ipfsAddress": "ipfs://bafyreidgtyvqe2thlsx3eq5iy7yydx7d5pet2s55rngeux2ecdohdv775a/metadata.json",
-    "description": "This wallet belongs to a current Decentraland DAO Revocations Committee member. This committee is responsible for investigating and solving revocation requests for DAO-funded Grants.",
+    "cid": "bafyreichc4f6knrkbqg5e2yucymvcwm5ppry5d6dgubady2kw7wc7nim7m",
+    "metadataUrl": "https://ipfs.io/ipfs/bafyreichc4f6knrkbqg5e2yucymvcwm5ppry5d6dgubady2kw7wc7nim7m/metadata.json",
+    "ipfsAddress": "ipfs://bafyreichc4f6knrkbqg5e2yucymvcwm5ppry5d6dgubady2kw7wc7nim7m/metadata.json",
+    "description": "This account belongs to a current Decentraland DAO Revocations Committee member. This committee is responsible for investigating and solving revocation requests for DAO-funded Grants.",
     "imageName": "RC-2023.png",
-    "network": "polytest",
-    "raftId": 6
+    "network": "polygon",
+    "raftId": 5
   },
   {
     "name": "Governance Squad",
-    "cid": "bafyreifqqpbp4fy3tnghehxjp32it4ggjxmdtgcqydj4vyohhsunam757a",
-    "metadataUrl": "https://ipfs.io/ipfs/bafyreifqqpbp4fy3tnghehxjp32it4ggjxmdtgcqydj4vyohhsunam757a/metadata.json",
-    "ipfsAddress": "ipfs://bafyreifqqpbp4fy3tnghehxjp32it4ggjxmdtgcqydj4vyohhsunam757a/metadata.json",
-    "description": "This wallet belongs to a current Decentraland DAO Governance Squad member. This squad is responsible of developing and maintaining the governance decision-making tools of the DCL DAO.",
+    "cid": "bafyreidmzou4wiy2prxq4jdyg66z7s3wulpfq2a7ar6sdkrixrj3b5mgwe",
+    "metadataUrl": "https://ipfs.io/ipfs/bafyreidmzou4wiy2prxq4jdyg66z7s3wulpfq2a7ar6sdkrixrj3b5mgwe/metadata.json",
+    "ipfsAddress": "ipfs://bafyreidmzou4wiy2prxq4jdyg66z7s3wulpfq2a7ar6sdkrixrj3b5mgwe/metadata.json",
+    "description": "This account belongs to a current Decentraland DAO Governance Squad member. This squad is responsible for developing and maintaining the governance decision-making tools of the DAO.",
     "imageName": "GS-2023.png",
-    "network": "polytest",
-    "raftId": 6
+    "network": "polygon",
+    "raftId": 5
   },
   {
     "name": "Grant Support Squad",
-    "cid": "bafyreibleqk6i5xtghwuiro6qoarpe2y63kgzzixa72j47mqyz3gkcgf2u",
-    "metadataUrl": "https://ipfs.io/ipfs/bafyreibleqk6i5xtghwuiro6qoarpe2y63kgzzixa72j47mqyz3gkcgf2u/metadata.json",
-    "ipfsAddress": "ipfs://bafyreibleqk6i5xtghwuiro6qoarpe2y63kgzzixa72j47mqyz3gkcgf2u/metadata.json",
-    "description": "This wallet belongs to a current Decentraland DAO Grant Support Squad member. This squad is responsible for supporting DCL grantees and help them achieve their goals.",
+    "cid": "bafyreih5t62qmeiugca6bp7dtubrd3ponqfndbim54e3vg4cfbroledohq",
+    "metadataUrl": "https://ipfs.io/ipfs/bafyreih5t62qmeiugca6bp7dtubrd3ponqfndbim54e3vg4cfbroledohq/metadata.json",
+    "ipfsAddress": "ipfs://bafyreih5t62qmeiugca6bp7dtubrd3ponqfndbim54e3vg4cfbroledohq/metadata.json",
+    "description": "This account belongs to a current Decentraland DAO Grant Support Squad member. This squad is responsible for supporting grantees and helping them achieve their goals.",
     "imageName": "GSS-2023.png",
-    "network": "polytest",
-    "raftId": 6
-  },
-  {
-    "name": "Grant Support Squad",
-    "cid": "bafyreibleqk6i5xtghwuiro6qoarpe2y63kgzzixa72j47mqyz3gkcgf2u",
-    "metadataUrl": "https://ipfs.io/ipfs/bafyreibleqk6i5xtghwuiro6qoarpe2y63kgzzixa72j47mqyz3gkcgf2u/metadata.json",
-    "ipfsAddress": "ipfs://bafyreibleqk6i5xtghwuiro6qoarpe2y63kgzzixa72j47mqyz3gkcgf2u/metadata.json",
-    "description": "This wallet belongs to a current Decentraland DAO Grant Support Squad member. This squad is responsible for supporting DCL grantees and help them achieve their goals.",
-    "imageName": "GSS-2023.png",
-    "network": "polytest",
-    "raftId": 6
+    "network": "polygon",
+    "raftId": 5
   },
   {
     "name": "Facilitation Squad",
-    "cid": "bafyreieb3qbhqgfhhavepyds3b63p7ufrtvlubnbtpctoctvdhypcjefpm",
-    "metadataUrl": "https://ipfs.io/ipfs/bafyreieb3qbhqgfhhavepyds3b63p7ufrtvlubnbtpctoctvdhypcjefpm/metadata.json",
-    "ipfsAddress": "ipfs://bafyreieb3qbhqgfhhavepyds3b63p7ufrtvlubnbtpctoctvdhypcjefpm/metadata.json",
-    "description": "This wallet belongs to a current Decentraland DAO Facilitation Squad member. This squad is responsible for managing communications and aligning different DAO stakeholders.",
+    "cid": "bafyreicsrpymlwm4hutebi2qio3e5hhzpqtyr6fv3ei6nsybb3vannhfgy",
+    "metadataUrl": "https://ipfs.io/ipfs/bafyreicsrpymlwm4hutebi2qio3e5hhzpqtyr6fv3ei6nsybb3vannhfgy/metadata.json",
+    "ipfsAddress": "ipfs://bafyreicsrpymlwm4hutebi2qio3e5hhzpqtyr6fv3ei6nsybb3vannhfgy/metadata.json",
+    "description": "This account belongs to a current Decentraland DAO Facilitation Squad member. This squad is responsible for managing communications and aligning different DAO stakeholders.",
     "imageName": "FS-2023.png",
-    "network": "polytest",
-    "raftId": 6
+    "network": "polygon",
+    "raftId": 5
   }
 ]

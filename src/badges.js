@@ -77,7 +77,7 @@ async function mintBadge(hre, badgeCid) {
   const ipfsAddress = `ipfs://${badgeCid}/metadata.json`
   const txn = await contract.connect(owner).createSpec(ipfsAddress, hre.network.config.raft_id)
   await txn.wait()
-  console.log(`Minted badge with txn: ${hre.network.config.blockExplorer}/tx/${txn.hash}`)
+  console.log(`Minted badge with txn: ${hre.network.config.blockExplorer}tx/${txn.hash}`)
   console.log('To airdrop this badge run: ')
   console.log(`npx hardhat --network ${hre.network.name} airdrop --badgecid ${badgeCid} --recipients `)
 }
