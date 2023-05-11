@@ -60,9 +60,10 @@ Use the following command to upload a badge spec to IPFS and mint it
  npx hardhat --network [networkConfig] createBadge --name "Badge Name" --description "Badge Description" --image "Badge.png"
 ```
 
-- networkConfig can be `optimism`, `polytest` or `polygon`
-Make sure you have the proper contract address in your `.env` file.
-Badge uploaded to IPFS are added to the `uploadedBadges.json` file
+- The `networkConfig` param can be `optimism`, `polytest` or `polygon`
+- The `image` param needs to be the name of an image stored in `/images`
+- You need to run this command from the root dir of the project
+- badges uploaded to IPFS are added to the `uploadedBadges.json` file
 
 #### Just mint
 
