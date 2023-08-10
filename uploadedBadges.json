@@ -88,5 +88,15 @@
     "imageName": "FS-2023.png",
     "network": "polygon",
     "raftId": 5
+  },
+  {
+    "name": "Decentraland Legislator",
+    "cid": "bafyreifumx2diwpudv7jipmztvw2npfta5h2bk35k3lzzmugsfkrmmg73i",
+    "metadataUrl": "https://ipfs.io/ipfs/bafyreifumx2diwpudv7jipmztvw2npfta5h2bk35k3lzzmugsfkrmmg73i/metadata.json",
+    "ipfsAddress": "ipfs://bafyreifumx2diwpudv7jipmztvw2npfta5h2bk35k3lzzmugsfkrmmg73i/metadata.json",
+    "description": "This wallet belongs to a DAO member that authored, published, and got approved by the Community at least one binding Governance Proposal in the Decentraland DAO.",
+    "imageName": "LegislatorBadge-2023.png",
+    "network": "polygon",
+    "raftId": 5
   }
 ]
