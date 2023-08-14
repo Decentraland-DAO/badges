@@ -117,7 +117,7 @@ const unequip = async (hre, badgeId) => {
   const contract = new hre.ethers.Contract(hre.network.config.badgesContractAddress, BadgesAbi, owner)
   const txn = await contract.connect(owner).unequip(badgeId)
   await txn.wait()
-  console.log('Revoked badge with txn hash:', txn.hash)
+  console.log('Unequipped badge with txn hash:', txn.hash)
 }
 
 module.exports = {
