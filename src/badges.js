@@ -10,7 +10,16 @@ const MANUAL_GAS_LIMIT = 1000000
 const LOG_FILE_NAME = 'uploadedBadges.json'
 const REASON_TENURE_ENDED = 2
 
-async function storeBadgeSpec(networkName, raftId, signerAddress, raftContractAddress, name, description, imageName, expiresAt = undefined) {
+async function storeBadgeSpec(
+  networkName,
+  raftId,
+  signerAddress,
+  raftContractAddress,
+  name,
+  description,
+  imageName,
+  expiresAt = undefined
+) {
   const client = new NFTStorage({ token: API_KEY })
   if (!imageName || imageName.length === 0) {
     throw new Error('Invalid image name')
@@ -48,7 +57,7 @@ async function storeBadgeSpec(networkName, raftId, signerAddress, raftContractAd
     expiresAt,
     imageName,
     network: networkName,
-    raftId
+    raftId,
   }
   console.log(`Uploaded: `, JSON.stringify(badgeData))
 
@@ -75,6 +84,7 @@ async function mintBadge(hre, badgeCid) {
   const [owner] = await hre.ethers.getSigners()
   const contract = new hre.ethers.Contract(hre.network.config.badgesContractAddress, BadgesAbi, owner)
   const ipfsAddress = `ipfs://${badgeCid}/metadata.json`
+  console.log('Minting...')
   const txn = await contract.connect(owner).createSpec(ipfsAddress, hre.network.config.raft_id)
   await txn.wait()
   console.log(`Minted badge with txn: ${hre.network.config.blockExplorer}tx/${txn.hash}`)
@@ -95,7 +105,9 @@ const airdrop = async (hre, badgeCid, recipients) => {
 const revoke = async (hre, badgeId, reason = REASON_TENURE_ENDED) => {
   const [owner] = await hre.ethers.getSigners()
   const contract = new hre.ethers.Contract(hre.network.config.badgesContractAddress, BadgesAbi, owner)
-  const txn = await contract.connect(owner).revokeBadge(hre.network.config.raft_id, badgeId, reason, { gasLimit: MANUAL_GAS_LIMIT })
+  const txn = await contract
+    .connect(owner)
+    .revokeBadge(hre.network.config.raft_id, badgeId, reason, { gasLimit: MANUAL_GAS_LIMIT })
   await txn.wait()
   console.log('Revoked badge with txn hash:', txn.hash)
 }
@@ -105,7 +117,7 @@ const unequip = async (hre, badgeId) => {
   const contract = new hre.ethers.Contract(hre.network.config.badgesContractAddress, BadgesAbi, owner)
   const txn = await contract.connect(owner).unequip(badgeId)
   await txn.wait()
-  console.log('Revoked badge with txn hash:', txn.hash)
+  console.log('Unequipped badge with txn hash:', txn.hash)
 }
 
 module.exports = {
