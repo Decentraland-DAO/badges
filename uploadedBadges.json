@@ -98,5 +98,15 @@
     "imageName": "LegislatorBadge-2023.png",
     "network": "polygon",
     "raftId": 5
+  },
+  {
+    "name": "Metaverse Studios",
+    "cid": "bafyreigxvrf7n4awhjr47r6rvnoqzmjf7p4ct7aqhuyaowgy2sttqzxnjy",
+    "metadataUrl": "https://ipfs.io/ipfs/bafyreigxvrf7n4awhjr47r6rvnoqzmjf7p4ct7aqhuyaowgy2sttqzxnjy/metadata.json",
+    "ipfsAddress": "ipfs://bafyreigxvrf7n4awhjr47r6rvnoqzmjf7p4ct7aqhuyaowgy2sttqzxnjy/metadata.json",
+    "description": "This wallet belongs to a certified creative studio building experiences in Decentraland and listed in the Decentraland Studios (https://studios.decentraland.org/) website.",
+    "imageName": "VP-2023.png",
+    "network": "polygon",
+    "raftId": 5
   }
 ]
