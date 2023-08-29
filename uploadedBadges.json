@@ -108,5 +108,15 @@
     "imageName": "VP-2023.png",
     "network": "polygon",
     "raftId": 5
+  },
+  {
+    "name": "LAND Owner",
+    "cid": "bafyreieu47j5hkbwu2vmg554ajdjthw4udp6alosmglrwr2nfa45weuoxm",
+    "metadataUrl": "https://ipfs.io/ipfs/bafyreieu47j5hkbwu2vmg554ajdjthw4udp6alosmglrwr2nfa45weuoxm/metadata.json",
+    "ipfsAddress": "ipfs://bafyreieu47j5hkbwu2vmg554ajdjthw4udp6alosmglrwr2nfa45weuoxm/metadata.json",
+    "description": "This wallet belongs to a DAO member who holds at least 1 parcel of LAND in Genesis City, the virtual town of the Decentraland project.",
+    "imageName": "LandOwner-2023.png",
+    "network": "polygon",
+    "raftId": 5
   }
 ]
