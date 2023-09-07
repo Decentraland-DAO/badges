@@ -118,5 +118,15 @@
     "imageName": "LandOwner-2023.png",
     "network": "polygon",
     "raftId": 5
+  },
+  {
+    "name": "Strategic Unit Squad",
+    "cid": "bafyreigm5fqqryvoboszxbrzeks5jihsc4mwb4mq26csdmooaju5g7ksja",
+    "metadataUrl": "https://ipfs.io/ipfs/bafyreigm5fqqryvoboszxbrzeks5jihsc4mwb4mq26csdmooaju5g7ksja/metadata.json",
+    "ipfsAddress": "ipfs://bafyreigm5fqqryvoboszxbrzeks5jihsc4mwb4mq26csdmooaju5g7ksja/metadata.json",
+    "description": "This wallet belongs to a current Decentraland DAO Strategic Unit Squad member. This squad is responsible for building consensus around strategic DAO operations and developing governance guidelines.",
+    "imageName": "StrategicUnit-2023.png",
+    "network": "polygon",
+    "raftId": 5
   }
 ]
