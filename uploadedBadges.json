@@ -1,16 +1,6 @@
 [
   {
     "name": "Security Advisory Board",
-    "cid": "bafyreibebjlhfylmalijwbto4q5vbjjdej7623zpamxfp62q345ipaxgoi",
-    "metadataUrl": "https://ipfs.io/ipfs/bafyreibebjlhfylmalijwbto4q5vbjjdej7623zpamxfp62q345ipaxgoi/metadata.json",
-    "ipfsAddress": "ipfs://bafyreibebjlhfylmalijwbto4q5vbjjdej7623zpamxfp62q345ipaxgoi/metadata.json",
-    "description": "This account belongs to a current Decentraland DAO Security Advisory Board (SAB) member. This committee is responsible for overseeing sensible operations of the DAO, and are the only ones with the power to halt operations initiated by the DAO Committee or community members.",
-    "imageName": "SAB-2023.png",
-    "network": "polygon",
-    "raftId": 5
-  },
-  {
-    "name": "Security Advisory Board",
     "cid": "bafyreidvmqur7xi5sxyu4reah3q2fwx5nh3vszxsagoqpjgin4izjkqm44",
     "metadataUrl": "https://ipfs.io/ipfs/bafyreidvmqur7xi5sxyu4reah3q2fwx5nh3vszxsagoqpjgin4izjkqm44/metadata.json",
     "ipfsAddress": "ipfs://bafyreidvmqur7xi5sxyu4reah3q2fwx5nh3vszxsagoqpjgin4izjkqm44/metadata.json",
