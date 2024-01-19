@@ -30,16 +30,6 @@
     "raftId": 5
   },
   {
-    "name": "Wearables Curation Committee",
-    "cid": "bafyreib2avzzxwxvb4onqt3oj6s5yg2peko227dh7mebxmp3674r64z6gu",
-    "metadataUrl": "https://ipfs.io/ipfs/bafyreib2avzzxwxvb4onqt3oj6s5yg2peko227dh7mebxmp3674r64z6gu/metadata.json",
-    "ipfsAddress": "ipfs://bafyreib2avzzxwxvb4onqt3oj6s5yg2peko227dh7mebxmp3674r64z6gu/metadata.json",
-    "description": "This account belongs to a current Decentraland DAO Wearables Curation Committee member. This committee is responsible for curating in-world wearable items.",
-    "imageName": "WCC-2023.png",
-    "network": "polygon",
-    "raftId": 5
-  },
-  {
     "name": "Revocations Committee",
     "cid": "bafyreichc4f6knrkbqg5e2yucymvcwm5ppry5d6dgubady2kw7wc7nim7m",
     "metadataUrl": "https://ipfs.io/ipfs/bafyreichc4f6knrkbqg5e2yucymvcwm5ppry5d6dgubady2kw7wc7nim7m/metadata.json",
